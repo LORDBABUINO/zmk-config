@@ -57,14 +57,14 @@
 
                 lights {
 // --------------------------------------------------------------------------------------------------------------------------------
-// |     RGBTG    |  BL CYCLE |  RGB CYCLE  |   LED LVL   | LEDNEXT |                 |   |     |      |      |      |      |     |
-// |    LIGHTS    | RGB UG UP | RGB HUE UP  | RGB SAT UP  |  BL UP  | RGB UGMODE NEXT |   |     |      |      |      |      |     |
-// |     BLTG     | RGB UG DN | RGB HUE DN  | RGB SAT DN  | BL DOWN | RGB UGMODE PREV |   |     |      |      |      |      |     |
+// |     RGBTG    |  BL CYCLE |  RGB CYCLE  |   LED LVL   | LEDNEXT |                 |   |     |      |      |      |          |           |
+// |    LIGHTS    | RGB UG UP | RGB HUE UP  | RGB SAT UP  |  BL UP  | RGB UGMODE NEXT |   |     |      |      |      |          |           |
+// |     BLTG     | RGB UG DN | RGB HUE DN  | RGB SAT DN  | BL DOWN | RGB UGMODE PREV |   |     |      |      |      |          |           |
 //                                          |             |         |                 |   |     |      |      |
                         bindings = <
-    &rgb_ug_toggle &bl_cycle   &rgb_ug_cycle &led_level    &led_next &trans               &trans &trans &trans &trans &trans &trans
-    &tog 3         &rgb_ug_inc &rgb_hue_inc  &rgb_sat_incs &bl_inc   &rgb_ug_mode_next    &trans &trans &trans &trans &trans &trans
-    &bl_toggle     &rgb_ug_dec &rgb_hue_dec  &rgb_sat_incs &bl_dec   &rgb_ug_mode_prev    &trans &trans &trans &trans &trans &trans
+    &rgb_ug_toggle &bl_cycle   &rgb_ug_cycle &led_level    &led_next &trans               &trans &trans &trans &trans &sys_reset &bootloader
+    &tog 3         &rgb_ug_inc &rgb_hue_inc  &rgb_sat_incs &bl_inc   &rgb_ug_mode_next    &trans &trans &trans &trans &trans     &trans
+    &bl_toggle     &rgb_ug_dec &rgb_hue_dec  &rgb_sat_incs &bl_dec   &rgb_ug_mode_prev    &trans &trans &trans &trans &trans     &trans
                                              &trans        &trans    &trans               &trans &trans &trans
                         >;
                 };
