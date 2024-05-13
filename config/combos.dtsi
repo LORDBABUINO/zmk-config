@@ -1,0 +1,73 @@
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
+  combo_##NAME { \
+    timeout-ms = <TERM>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+    global-quick-tap-ms = <QUICKTAP>; \
+  };
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+    /*
+      KEY POSITIONS
+      ╭────────────────────────╮  ╭────────────────────────╮
+      │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
+      │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
+      │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
+      ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
+                  ╰────────────╯  ╰────────────╯
+    */
+
+    /* Layers */
+    // COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+
+    // Default Layer
+    
+    // Acude
+    COMBO(á, &kp A_ACUTE, 13 26, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(é, &kp E_ACUTE,  3 16, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(í, &kp I_ACUTE,  8 21, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ó, &kp O_ACUTE,  9 10, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ú, &kp U_ACUTE,  7 20, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // Circumflex
+    COMBO(â, &kp A_CIRC, 13 27, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ê, &kp E_CIRC,  3 17, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ô, &kp O_CIRC,  9 22, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // tilde
+    COMBO(ã, &kp A_TILDE, 13 28, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(õ, &kp O_TILDE,  9 20, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // Umlaut
+    COMBO(ä, &kp A_UML, 13 25, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ö, &kp O_UML,  9 34, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ü, &kp U_UML,  7 21, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // Cedilla
+    COMBO(ç, &kp C_CEDIL, 27 32, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+
+    // Number Layer
+    
+    // Symbols
+    COMBO(excl, &kp EXCL, 1 13, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(at, &kp AT, 2 14, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(hash, &kp HASH, 3 15, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(dollar, &kp DOLLAR, 4 16, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(percent, &kp PERCENT, 5 17, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(caret, &kp CARET, 13 25, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(ampersand, &kp AMPERSAND, 14 26, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(star, &kp STAR, 15 27, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(lpar, &kp LPAR, 16 28, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(rpar, &kp RPAR, 17 29, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // Bluetooth
+    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(bt_sel_0, &bt BT_SEL 0, 6  18, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(bt_sel_1, &bt BT_SEL 1, 7  19, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(bt_sel_2, &bt BT_SEL 2, 8  20, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(bt_sel_3, &bt BT_SEL 3, 9  21, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(bt_sel_4, &bt BT_SEL 4, 10 22, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // Copy & Paste
+    COMBO( copy, &bt  C_COPY, 19 20, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(paste, &bt C_PASTE, 20 21, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    COMBO(  cut, &bt   C_CUT, 21 22, 1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+  };
+};
