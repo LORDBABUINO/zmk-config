@@ -57,7 +57,7 @@
 // |    CTRL   |  WHEEL LF  | WHEEL DN | WHEEL UP | WHEEL RT | SPEED DN  |   |         |  PREV TR  |  VOL DOWN  |    VOL UP  | NEXT TR  |   SHFT   |
 //                                     |   GUI    |   PREV   |           |   |         |    NEXT   |     ALT    |
                         bindings = <
-   &mt LALT TAB &kp C_BRI_DN &kp   BTN2 &kp   BTN3 &kp   BTN1 &kp C_BRI_UP   &kp   K_PP &kp    HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
+   &mt LALT TAB &kp C_BRI_DN &kp   MB2  &kp   MB3  &kp    MB1 &kp C_BRI_UP   &kp   K_PP &kp    HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
    &tog 3       &kp     MS_L &kp   MS_D &kp   MS_U &kp   MS_R &ms_up         &kp C_STOP &kp    LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
    &kp LCTRL    &kp     WH_L &kp   WH_D &kp   WH_U &kp   WH_R &ms_dn         &trans     &kp  C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
                                         &kp   LGUI &to NUMBER &trans         &trans     &to DEFAULT &kp RALT
