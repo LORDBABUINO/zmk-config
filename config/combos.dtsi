@@ -22,25 +22,25 @@
 
     // Default Layer
 
-    // Acude
-    COMBO(a_acute, &kp A_ACUTE, 13 26, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(e_acute, &kp E_ACUTE,  3 16, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(i_acute, &kp I_ACUTE,  8 21, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(o_acute, &kp O_ACUTE,  9 10, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(u_acute, &kp U_ACUTE,  7 20, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    // Circumflex
-    COMBO(a_circumflex, &kp A_CIRC, 13 27, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(e_circumflex, &kp E_CIRC,  3 17, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(o_circumflex, &kp O_CIRC,  9 22, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    // tilde
-    COMBO(a_tilde, &kp A_TILDE, 13 28, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(o_tilde, &kp O_TILDE,  9 20, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    // Umlaut
-    COMBO(a_umlaut, &kp A_UML, 13 25, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(o_umlaut, &kp O_UML,  9 34, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(u_umlaut, &kp U_UML,  7 21, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    // Cedilla
-    COMBO(c_cedilla, &kp C_CEDIL, 27 32, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // // Acude
+    // COMBO(a_acute, &kp A_ACUTE, 13 26, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(e_acute, &kp E_ACUTE,  3 16, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(i_acute, &kp I_ACUTE,  8 21, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(o_acute, &kp O_ACUTE,  9 10, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(u_acute, &kp U_ACUTE,  7 20, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // // Circumflex
+    // COMBO(a_circumflex, &kp A_CIRC, 13 27, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(e_circumflex, &kp E_CIRC,  3 17, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(o_circumflex, &kp O_CIRC,  9 22, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // // tilde
+    // COMBO(a_tilde, &kp A_TILDE, 13 28, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(o_tilde, &kp O_TILDE,  9 20, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // // Umlaut
+    // COMBO(a_umlaut, &kp A_UML, 13 25, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(o_umlaut, &kp O_UML,  9 34, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // COMBO(u_umlaut, &kp U_UML,  7 21, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
+    // // Cedilla
+    // COMBO(c_cedilla, &kp C_CEDIL, 27 32, 0, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
 
     // Number Layer
 

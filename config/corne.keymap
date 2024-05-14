@@ -24,43 +24,43 @@
                 compatible = "zmk,keymap";
 
                 default {
-// ----------------------------------------------------------------------------------------------------------
-// |   TAB  |  Q  |  W  |  E  |  R    |    T    |   |   Y   |    U     |    I    |   O   |    P   |   BKSP  |
-// | LIGHTS |  A  |  S  |  D  |  F    |    G    |   |   H   |    J     |    K    |   L   |    ;   |    '    |
-// |  CTRL  |  Z  |  X  |  C  |  V    |    B    |   |   N   |    M     |    ,    |   .   |    /   |   SHFT  |
-//                      | GUI | PREV  |  SPACE  |   |  ENT  |   NEXT   |   ALT   |
+// -----------------------------------------------------------------------------------------------------------------
+// |  ALT/TAB  |  Q  |  W  |  E  |  R    |    T   |   |   Y   |    U     |    I    |   O   |    P   |      BKSP    |
+// |   LIGHTS  |  A  |  S  |  D  |  F    |    G   |   |   H   |    J     |    K    |   L   |    ;   |       '      |
+// |    CTRL   |  Z  |  X  |  C  |  V    |    B   |   |   N   |    M     |    ,    |   .   |    /   |   SHFT/CAPS  |
+//                         | GUI | PREV  |  SPACE |   |  ENT  |   NEXT   |   ALT   |
                         bindings = <
-   &kp   TAB &kp Q &kp W &kp E &kp   R &kp     T     &kp Y   &kp      U &kp     I &kp   O &kp    P &kp   BSPC
-   &tog    3 &kp A &kp S &kp D &kp   F &kp     G     &kp H   &kp      J &kp     K &kp   L &kp SEMI &kp    SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp   V &kp     B     &kp N   &kp      M &kp COMMA &kp DOT &kp FSLH &kp LSHIFT
-                  &mt LGUI ESC &to NAV &kp SPACE     &kp RET &to NUMBER &kp  RALT
+   &mt LALT TAB &kp Q &kp W &kp E &kp   R &kp     T   &kp Y   &kp      U &kp     I &kp   O &kp    P &kp   BSPC
+   &tog    3    &kp A &kp S &kp D &kp   F &kp     G   &kp H   &kp      J &kp     K &kp   L &kp SEMI &kp    SQT
+   &kp LCTRL    &kp Z &kp X &kp C &kp   V &kp     B   &kp N   &kp      M &kp COMMA &kp DOT &kp FSLH &mt RSHIFT CAPS
+                     &mt LGUI ESC &to NAV &kp SPACE   &kp RET &to NUMBER &kp  RALT
                         >;
                 };
                 number {
-// ---------------------------------------------------------------------------------------------------------------------
-// |  TAB   |    1    |    2    |    3    |      4    |    5    |  |  F1  |   F2  |    F3  |  F4   |   F5    |   BKSP  |
-// | LIGHTS |    6    |    7    |    8    |      9    |    0    |  |  F6  |   F7  |    F8  |  F9   |  F10    |   DEL   |
-// |  CTRL  |    `    |    -    |    =    |      [    |    ]    |  | F11  |  F12  |        |  INS  |  PSCRN  |  SHIFT  |
-//                              |   GUI   |    PREV   |  SHIFT  |  |      |  NEXT |   ALT  |
+// ------------------------------------------------------------------------------------------------------------------------
+// |  ALT/TAB  |    1    |    2    |    3    |      4    |    5    |  |  F1  |   F2  |    F3  |  F4   |   F5    |   BKSP  |
+// |   LIGHTS  |    6    |    7    |    8    |      9    |    0    |  |  F6  |   F7  |    F8  |  F9   |  F10    |   DEL   |
+// |    CTRL   |    `    |    -    |    =    |      [    |    ]    |  | F11  |  F12  |        |  INS  |  PSCRN  |  SHIFT  |
+//                                 |   GUI   |    PREV   |  SHIFT  |  |      |  NEXT |   ALT  |
                     bindings = <
-   &tog 3    &kp    N6 &kp    N7 &kp    N8 &kp      N9 &kp     N0  &kp  F6 &kp  F7 &kp   F8 &kp F9  &kp  F10  &kp DEL
-   &kp TAB   &kp    N1 &kp    N2 &kp    N3 &kp      N4 &kp     N5  &kp  F1 &kp  F2 &kp   F3 &kp F4  &kp  F5   &kp BSPC
-   &kp LCTRL &kp GRAVE &kp MINUS &kp EQUAL &kp    LBKT &kp   RBKT  &kp F11 &kp F12 &trans   &kp INS &kp PSCRN &kp RSHIFT
-                              &mt LGUI ESC &to DEFAULT &kp LSHIFT  &trans  &to NAV &kp RALT
+   &mt LALT TAB &kp    N1 &kp    N2 &kp    N3 &kp      N4 &kp     N5  &kp  F1 &kp  F2 &kp   F3 &kp F4  &kp  F5   &kp BSPC
+   &tog 3       &kp    N6 &kp    N7 &kp    N8 &kp      N9 &kp     N0  &kp  F6 &kp  F7 &kp   F8 &kp F9  &kp  F10  &kp DEL
+   &kp LCTRL    &kp GRAVE &kp MINUS &kp EQUAL &kp    LBKT &kp   RBKT  &kp F11 &kp F12 &trans   &kp INS &kp PSCRN &kp RSHIFT
+                                 &mt LGUI ESC &to DEFAULT &kp LSHIFT  &trans  &to NAV &kp RALT
                         >;
                 };
 
                 navigation {
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-// |  TAB   |  BGDOWN    |  BTN2    |   BTN3   |   BTN1   |    BGUP   |   |   PLAY  |    HOME   | PAGE DOWN  |   PAGE UP  |    END   |   BKSP   |
-// | LIGHTS |  MOUSE LF  | MOUSE DN | MOUSE UP | MOUSE RT | SPEED UP  |   |   STOP  |    LEFT   |    DOWN    |      UP    |   RIGHT  |   MUTE   |
-// |  CTRL  |  WHEEL LF  | WHEEL DN | WHEEL UP | WHEEL RT | SPEED DN  |   |         |  PREV TR  |  VOL DOWN  |    VOL UP  | NEXT TR  |   SHFT   |
-//                                  |   GUI    |   PREV   |           |   |         |    NEXT   |     ALT    |
+// -------------------------------------------------------------------------------------------------------------------------------------------------
+// |  ALT/TAB  |  BGDOWN    |  BTN2    |   BTN3   |   BTN1   |    BGUP   |   |   PLAY  |    HOME   | PAGE DOWN  |   PAGE UP  |    END   |   BKSP   |
+// |   LIGHTS  |  MOUSE LF  | MOUSE DN | MOUSE UP | MOUSE RT | SPEED UP  |   |   STOP  |    LEFT   |    DOWN    |      UP    |   RIGHT  |   MUTE   |
+// |    CTRL   |  WHEEL LF  | WHEEL DN | WHEEL UP | WHEEL RT | SPEED DN  |   |         |  PREV TR  |  VOL DOWN  |    VOL UP  | NEXT TR  |   SHFT   |
+//                                     |   GUI    |   PREV   |           |   |         |    NEXT   |     ALT    |
                         bindings = <
-   &kp  TAB  &kp C_BRI_DN &kp   BTN2 &kp   BTN3 &kp   BTN1 &kp C_BRI_UP   &kp   K_PP &kp    HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
-   &tog 3    &kp     MS_L &kp   MS_D &kp   MS_U &kp   MS_R &ms_up         &kp C_STOP &kp    LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
-   &kp LCTRL &kp     WH_L &kp   WH_D &kp   WH_U &kp   WH_R &ms_dn         &trans     &kp  C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
-                                     &kp   LGUI &to NUMBER &trans         &trans     &to DEFAULT &kp RALT
+   &mt LALT TAB &kp C_BRI_DN &kp   BTN2 &kp   BTN3 &kp   BTN1 &kp C_BRI_UP   &kp   K_PP &kp    HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
+   &tog 3       &kp     MS_L &kp   MS_D &kp   MS_U &kp   MS_R &ms_up         &kp C_STOP &kp    LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
+   &kp LCTRL    &kp     WH_L &kp   WH_D &kp   WH_U &kp   WH_R &ms_dn         &trans     &kp  C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
+                                        &kp   LGUI &to NUMBER &trans         &trans     &to DEFAULT &kp RALT
                         >;
                 };
 
