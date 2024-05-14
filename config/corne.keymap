@@ -18,7 +18,261 @@
 
 / {
         combos {
-            #include "combos.dtsi"
+          compatible = "zmk,combos";
+          /*
+            KEY POSITIONS
+            ╭────────────────────────╮  ╭────────────────────────╮
+            │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
+            │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
+            │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
+            ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
+                        ╰────────────╯  ╰────────────╯
+          */
+
+          // Default Layer
+
+          // Acude
+          a_acute {
+            bindings = <&kp A_ACUTE>;
+            key-positions = <13 26>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          e_acute {
+            bindings = <&kp E_ACUTE>;
+            key-positions = <3 16>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          i_acute {
+            bindings = <&kp I_ACUTE>;
+            key-positions = <8 21>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          o_acute {
+            bindings = <&kp O_ACUTE>;
+            key-positions = <9 10>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          u_acute {
+            bindings = <&kp U_ACUTE>;
+            key-positions = <7 20>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          // Circumflex
+          a_circumflex {
+            bindings = <&kp A_CIRC>;
+            key-positions = <13 27>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          e_circumflex {
+            bindings = <&kp E_CIRC>;
+            key-positions = <3 17>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          o_circumflex {
+            bindings = <&kp O_CIRC>;
+            key-positions = <9 22>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          // tilde
+          a_tilde {
+            bindings = <&kp A_TILDE>;
+            key-positions = <13 28>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          o_tilde {
+            bindings = <&kp O_TILDE>;
+            key-positions = <9 20>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          // Umlaut
+          a_umlaut {
+            bindings = <&kp A_UML>;
+            key-positions = <13 25>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          o_umlaut {
+            bindings = <&kp O_UML>;
+            key-positions = <9 34>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          u_umlaut {
+            bindings = <&kp U_UML>;
+            key-positions = <7 21>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          // Cedilla
+          c_cedilla {
+            bindings = <&kp C_CEDIL>;
+            key-positions = <27 32>;
+            layers = <0>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+
+          // Number Layer
+
+          // Symbols
+          excl {
+            bindings = <&kp EXCL>;
+            key-positions = <1 13>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          at {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          caret {
+            bindings = <&kp CARET>;
+            key-positions = <13 25>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <14 26>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          star {
+            bindings = <&kp STAR>;
+            key-positions = <15 27>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <16 28>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <17 29>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          // Bluetooth
+          bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <1 2 3 4>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          bt_sel_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <6  18>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          bt_sel_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <7  19>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          bt_sel_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <8  20>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          bt_sel_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <9  21>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          bt_sel_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <10 22>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          // Copy & Paste
+          copy {
+            bindings = <&bt  C_COPY>;
+            key-positions = <19 20>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          paste {
+            bindings = <&bt C_PASTE>;
+            key-positions = <20 21>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
+          cut {
+            bindings = <&bt   C_CUT>;
+            key-positions = <21 22>;
+            layers = <1>;
+            timeout-ms = <30>;
+            global-quick-tap-ms = <100>;
+          };
         };
         keymap {
                 compatible = "zmk,keymap";
