@@ -56,8 +56,8 @@
 //                                     |   GUI    |   PREV   |           |   |         |    NEXT   |     ALT    |
                         bindings = <
    &mt LALT TAB &kp C_BRI_DN &kp   MB2  &kp   MB3  &kp    MB1 &kp C_BRI_UP   &kp   K_PP &kp    HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
-   &tog 3             U_MS_L     U_MS_D     U_MS_U     U_MS_R &ms_up         &kp C_STOP &kp    LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
-   &kp LCTRL          U_WH_L     U_WH_D     U_WH_U     U_WH_R &ms_dn         &trans     &kp  C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
+   &tog 3             U_MS_L     U_MS_D     U_MS_U     U_MS_R &trans         &kp C_STOP &kp    LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
+   &kp LCTRL          U_WH_L     U_WH_D     U_WH_U     U_WH_R &trans         &trans     &kp  C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
                                         &kp   LGUI &to NUMBER &trans         &trans     &to DEFAULT &kp RALT
                         >;
                 };
