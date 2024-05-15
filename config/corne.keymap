@@ -5,10 +5,10 @@
  */
 
 // Layers
-#define DEFAULT
-#define NUMBER
-#define NAV
-#define LIGHTS
+#define DEFAULT 0
+#define NUMBER  1
+#define NAV     2
+#define LIGHTS  3
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
