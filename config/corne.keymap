@@ -50,15 +50,15 @@
 
                 navigation {
 // -------------------------------------------------------------------------------------------------------------------------------------------------
-// |  ALT/TAB  |  BGDOWN    |  BTN2    |   BTN3   |   BTN1   |    BGUP   |   |   PLAY  |    HOME   | PAGE DOWN  |   PAGE UP  |    END   |   BKSP   |
-// |   LIGHTS  |  MOUSE LF  | MOUSE DN | MOUSE UP | MOUSE RT | SPEED UP  |   |   STOP  |    LEFT   |    DOWN    |      UP    |   RIGHT  |   MUTE   |
-// |    CTRL   |  WHEEL LF  | WHEEL DN | WHEEL UP | WHEEL RT | SPEED DN  |   |         |  PREV TR  |  VOL DOWN  |    VOL UP  | NEXT TR  |   SHFT   |
-//                                     |   GUI    |   PREV   |           |   |         |    NEXT   |     ALT    |
+// |  ALT/TAB  |   BGDOWN     |    BTN2      |    BTN3    |      BTN1     |    BGUP   |   |   PLAY  |     HOME   | PAGE DOWN  |   PAGE UP  |    END   |   BKSP   |
+// |   LIGHTS  |   MOUSE LF   |   MOUSE DN   |  MOUSE UP  |    MOUSE RT   |           |   |   STOP  |     LEFT   |    DOWN    |      UP    |   RIGHT  |   MUTE   |
+// |    CTRL   |   WHEEL LF   |   WHEEL DN   |  WHEEL UP  |    WHEEL RT   |           |   |         |   PREV TR  |  VOL DOWN  |    VOL UP  | NEXT TR  |   SHFT   |
+//                                           |    GUI     |      PREV     |           |   |         |     NEXT   |     ALT    |
                         bindings = <
-   &mt LALT TAB &kp C_BRI_DN &kp   MB2  &kp   MB3  &kp    MB1 &kp C_BRI_UP   &kp   K_PP &kp    HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
-   &tog 3             U_MS_L     U_MS_D     U_MS_U     U_MS_R &trans         &kp C_STOP &kp    LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
-   &kp LCTRL          U_WH_L     U_WH_D     U_WH_U     U_WH_R &trans         &trans     &kp  C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
-                                        &kp   LGUI &to NUMBER &trans         &trans     &to DEFAULT &kp RALT
+   &mt LALT TAB &kp   C_BRI_DN &kp        MB2 &kp      MB3 &kp         MB1 &kp C_BRI_UP   &kp   K_PP &kp     HOME &kp    PG_DN &kp    PG_UP &kp    END &kp   BSPC
+   &tog 3       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans         &kp C_STOP &kp     LEFT &kp     DOWN &kp       UP &kp  RIGHT &kp C_MUTE
+   &kp LCTRL    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans         &trans     &kp   C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp RSHIFT
+                                              &kp   LGUI   &to NUMBER      &trans         &trans     &to DEFAULT &kp RALT
                         >;
                 };
 
