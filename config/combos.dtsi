@@ -4,6 +4,7 @@
     timeout-ms = <30>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
+    global-quick-tap-ms = <100>; \
   };
 
 / {
@@ -19,7 +20,6 @@
                   ╰────────────╯  ╰────────────╯
     */
 
-    // global-quick-tap-ms = <100>; \
     // Default Layer
 
     // // Acude
@@ -63,10 +63,10 @@
     COMBO(bt_sel_3, &bt BT_SEL 3, 9  21, 1)
     COMBO(bt_sel_4, &bt BT_SEL 4, 10 22, 1)
     // Copy & Paste
-    COMBO( undo, &bt  K_UNDO, 18 19, 1)
-    COMBO( copy, &bt  K_COPY, 19 20, 1)
-    COMBO(paste, &bt K_PASTE, 20 21, 1)
-    COMBO(  cut, &bt   K_CUT, 21 22, 1)
-    COMBO( redo, &bt  K_REDO, 22 23, 1)
+    COMBO( undo, &kp  K_UNDO, 18 19, 1)
+    COMBO( copy, &kp  K_COPY, 19 20, 1)
+    COMBO(paste, &kp K_PASTE, 20 21, 1)
+    COMBO(  cut, &kp   K_CUT, 21 22, 1)
+    COMBO( redo, &kp  K_REDO, 22 23, 1)
   };
 };
