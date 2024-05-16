@@ -4,11 +4,11 @@
     timeout-ms = <30>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    // global-quick-tap-ms = <100>; \
   };
 
 / {
   combos {
+    // global-quick-tap-ms = <100>; \
     compatible = "zmk,combos";
     /*
       KEY POSITIONS
