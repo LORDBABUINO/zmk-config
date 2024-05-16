@@ -45,16 +45,16 @@
     // Number Layer
 
     // Symbols
-    COMBO(excl, &kp EXCL, 1 13, 1)
-    COMBO(at, &kp AT, 2 14, 1)
-    COMBO(hash, &kp HASH, 3 15, 1)
-    COMBO(dollar, &kp DOLLAR, 4 16, 1)
-    COMBO(percent, &kp PERCENT, 5 17, 1)
-    COMBO(caret, &kp CARET, 13 25, 1)
+    COMBO(     excl, &kp      EXCL,  1 13, 1)
+    COMBO(       at, &kp        AT,  2 14, 1)
+    COMBO(     hash, &kp      HASH,  3 15, 1)
+    COMBO(   dollar, &kp    DOLLAR,  4 16, 1)
+    COMBO(  percent, &kp   PERCENT,  5 17, 1)
+    COMBO(    caret, &kp     CARET, 13 25, 1)
     COMBO(ampersand, &kp AMPERSAND, 14 26, 1)
-    COMBO(star, &kp STAR, 15 27, 1)
-    COMBO(lpar, &kp LPAR, 16 28, 1)
-    COMBO(rpar, &kp RPAR, 17 29, 1)
+    COMBO(     star, &kp      STAR, 15 27, 1)
+    COMBO(     lpar, &kp      LPAR, 16 28, 1)
+    COMBO(     rpar, &kp      RPAR, 17 29, 1)
     // Bluetooth
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, 1)
     COMBO(bt_sel_0, &bt BT_SEL 0, 6  18, 1)
