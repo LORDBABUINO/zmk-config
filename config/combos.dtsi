@@ -1,9 +1,7 @@
-#define COMBO_TERM_DEFAULT 30
-
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
-    timeout-ms = <TERM>; \
     bindings = <BINDINGS>; \
+    timeout-ms = <30>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
@@ -21,53 +19,54 @@
                   ╰────────────╯  ╰────────────╯
     */
 
+    // global-quick-tap-ms = <100>; \
     // Default Layer
 
     // // Acude
-    // COMBO(a_acute, &kp A_ACUTE, 13 26, 0, COMBO_TERM_DEFAULT)
-    // COMBO(e_acute, &kp E_ACUTE,  3 16, 0, COMBO_TERM_DEFAULT)
-    // COMBO(i_acute, &kp I_ACUTE,  8 21, 0, COMBO_TERM_DEFAULT)
-    // COMBO(o_acute, &kp O_ACUTE,  9 10, 0, COMBO_TERM_DEFAULT)
-    // COMBO(u_acute, &kp U_ACUTE,  7 20, 0, COMBO_TERM_DEFAULT)
+    // COMBO(a_acute, &kp A_ACUTE, 13 26, 0)
+    // COMBO(e_acute, &kp E_ACUTE,  3 16, 0)
+    // COMBO(i_acute, &kp I_ACUTE,  8 21, 0)
+    // COMBO(o_acute, &kp O_ACUTE,  9 10, 0)
+    // COMBO(u_acute, &kp U_ACUTE,  7 20, 0)
     // // Circumflex
-    // COMBO(a_circumflex, &kp A_CIRC, 13 27, 0, COMBO_TERM_DEFAULT)
-    // COMBO(e_circumflex, &kp E_CIRC,  3 17, 0, COMBO_TERM_DEFAULT)
-    // COMBO(o_circumflex, &kp O_CIRC,  9 22, 0, COMBO_TERM_DEFAULT)
+    // COMBO(a_circumflex, &kp A_CIRC, 13 27, 0)
+    // COMBO(e_circumflex, &kp E_CIRC,  3 17, 0)
+    // COMBO(o_circumflex, &kp O_CIRC,  9 22, 0)
     // // tilde
-    // COMBO(a_tilde, &kp A_TILDE, 13 28, 0, COMBO_TERM_DEFAULT)
-    // COMBO(o_tilde, &kp O_TILDE,  9 20, 0, COMBO_TERM_DEFAULT)
+    // COMBO(a_tilde, &kp A_TILDE, 13 28, 0)
+    // COMBO(o_tilde, &kp O_TILDE,  9 20, 0)
     // // Umlaut
-    // COMBO(a_umlaut, &kp A_UML, 13 25, 0, COMBO_TERM_DEFAULT)
-    // COMBO(o_umlaut, &kp O_UML,  9 34, 0, COMBO_TERM_DEFAULT)
-    // COMBO(u_umlaut, &kp U_UML,  7 21, 0, COMBO_TERM_DEFAULT)
+    // COMBO(a_umlaut, &kp A_UML, 13 25, 0)
+    // COMBO(o_umlaut, &kp O_UML,  9 34, 0)
+    // COMBO(u_umlaut, &kp U_UML,  7 21, 0)
     // // Cedilla
-    // COMBO(c_cedilla, &kp C_CEDIL, 27 32, 0, COMBO_TERM_DEFAULT)
+    // COMBO(c_cedilla, &kp C_CEDIL, 27 32, 0)
 
     // Number Layer
 
     // Symbols
-    COMBO(excl, &kp EXCL, 1 13, 1, COMBO_TERM_DEFAULT)
-    COMBO(at, &kp AT, 2 14, 1, COMBO_TERM_DEFAULT)
-    COMBO(hash, &kp HASH, 3 15, 1, COMBO_TERM_DEFAULT)
-    COMBO(dollar, &kp DOLLAR, 4 16, 1, COMBO_TERM_DEFAULT)
-    COMBO(percent, &kp PERCENT, 5 17, 1, COMBO_TERM_DEFAULT)
-    COMBO(caret, &kp CARET, 13 25, 1, COMBO_TERM_DEFAULT)
-    COMBO(ampersand, &kp AMPERSAND, 14 26, 1, COMBO_TERM_DEFAULT)
-    COMBO(star, &kp STAR, 15 27, 1, COMBO_TERM_DEFAULT)
-    COMBO(lpar, &kp LPAR, 16 28, 1, COMBO_TERM_DEFAULT)
-    COMBO(rpar, &kp RPAR, 17 29, 1, COMBO_TERM_DEFAULT)
+    COMBO(excl, &kp EXCL, 1 13, 1)
+    COMBO(at, &kp AT, 2 14, 1)
+    COMBO(hash, &kp HASH, 3 15, 1)
+    COMBO(dollar, &kp DOLLAR, 4 16, 1)
+    COMBO(percent, &kp PERCENT, 5 17, 1)
+    COMBO(caret, &kp CARET, 13 25, 1)
+    COMBO(ampersand, &kp AMPERSAND, 14 26, 1)
+    COMBO(star, &kp STAR, 15 27, 1)
+    COMBO(lpar, &kp LPAR, 16 28, 1)
+    COMBO(rpar, &kp RPAR, 17 29, 1)
     // Bluetooth
-    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, 1, COMBO_TERM_DEFAULT)
-    COMBO(bt_sel_0, &bt BT_SEL 0, 6  18, 1, COMBO_TERM_DEFAULT)
-    COMBO(bt_sel_1, &bt BT_SEL 1, 7  19, 1, COMBO_TERM_DEFAULT)
-    COMBO(bt_sel_2, &bt BT_SEL 2, 8  20, 1, COMBO_TERM_DEFAULT)
-    COMBO(bt_sel_3, &bt BT_SEL 3, 9  21, 1, COMBO_TERM_DEFAULT)
-    COMBO(bt_sel_4, &bt BT_SEL 4, 10 22, 1, COMBO_TERM_DEFAULT)
+    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, 1)
+    COMBO(bt_sel_0, &bt BT_SEL 0, 6  18, 1)
+    COMBO(bt_sel_1, &bt BT_SEL 1, 7  19, 1)
+    COMBO(bt_sel_2, &bt BT_SEL 2, 8  20, 1)
+    COMBO(bt_sel_3, &bt BT_SEL 3, 9  21, 1)
+    COMBO(bt_sel_4, &bt BT_SEL 4, 10 22, 1)
     // Copy & Paste
-    COMBO( undo, &bt  K_UNDO, 18 19, 1, COMBO_TERM_DEFAULT)
-    COMBO( copy, &bt  K_COPY, 19 20, 1, COMBO_TERM_DEFAULT)
-    COMBO(paste, &bt K_PASTE, 20 21, 1, COMBO_TERM_DEFAULT)
-    COMBO(  cut, &bt   K_CUT, 21 22, 1, COMBO_TERM_DEFAULT)
-    COMBO( redo, &bt  K_REDO, 22 23, 1, COMBO_TERM_DEFAULT)
+    COMBO( undo, &bt  K_UNDO, 18 19, 1)
+    COMBO( copy, &bt  K_COPY, 19 20, 1)
+    COMBO(paste, &bt K_PASTE, 20 21, 1)
+    COMBO(  cut, &bt   K_CUT, 21 22, 1)
+    COMBO( redo, &bt  K_REDO, 22 23, 1)
   };
 };
