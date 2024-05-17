@@ -66,15 +66,15 @@
 
                 lights {
 // --------------------------------------------------------------------------------------------------------------------------------
-// |     RGBTG     |    BL CYCLE   |   RGB CYCLE   |               |          |     |   |     |      |      |      |  RESET   | BOOTLOADER|
-// |    LIGHTS     |   RGB UG UP   |  RGB HUE UP   |  RGB SAT UP   |  BL UP   |     |   |     |      |      |      |          |           |
-// |     BLTG      |   RGB UG DN   |  RGB HUE DN   |  RGB SAT DN   | BL DOWN  |     |   |     |      |      |      |          |           |
-//                                                 |               |          |     |   |     |      |      |
+// |     RESET     |  BOOTLOADER   |     RGBTG     |    BL CYCLE   |   RGB CYCLE   |     |   |     |      |      |      |  RESET   | BOOTLOADER|
+// |    LIGHTS     |   RGB UG UP   |  RGB HUE UP   |  RGB SAT UP   |    BL UP      |     |   |     |      |      |      |          |           |
+// |     BLTG      |   RGB UG DN   |  RGB HUE DN   |  RGB SAT DN   |   BL DOWN     |     |   |     |      |      |      |          |           |
+//                                                 |               |               |     |   |     |      |      |
                         bindings = <
-    &rgb_ug RGB_TOG &bl    BL_CYCLE &rgb_ug RGB_EFF &trans          &trans     &trans   &trans &trans &trans &trans &sys_reset &bootloader
-    &tog     LIGHTS &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_SAI &bl BL_INC &trans   &trans &trans &trans &trans &trans     &trans
-    &bl      BL_TOG &rgb_ug RGB_BRD &rgb_ug RGB_HUD &rgb_ug RGB_SAD &bl BL_DEC &trans   &trans &trans &trans &trans &trans     &trans
-                                                    &trans          &trans     &trans   &trans &trans &trans
+    &bootloader     &sys_reset      &rgb_ug RGB_TOG &bl    BL_CYCLE &rgb_ug RGB_EFF &trans   &trans &trans &trans &trans &sys_reset &bootloader
+    &tog     LIGHTS &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_SAI &bl      BL_INC &trans   &trans &trans &trans &trans &trans     &trans
+    &bl      BL_TOG &rgb_ug RGB_BRD &rgb_ug RGB_HUD &rgb_ug RGB_SAD &bl      BL_DEC &trans   &trans &trans &trans &trans &trans     &trans
+                                                    &trans          &trans          &trans   &trans &trans &trans
                         >;
                 };
         };
