@@ -23,11 +23,11 @@
     // Default Layer
 
     // // Acude
-    // COMBO(a_acute, &kp A_ACUTE, 13 26, 0)
-    // COMBO(e_acute, &kp E_ACUTE,  3 16, 0)
-    // COMBO(i_acute, &kp I_ACUTE,  8 21, 0)
-    // COMBO(o_acute, &kp O_ACUTE,  9 10, 0)
-    // COMBO(u_acute, &kp U_ACUTE,  7 20, 0)
+    COMBO(a_acute, &kp RA(A), 13 26, 0)
+    COMBO(e_acute, &kp RA(E),  3 16, 0)
+    COMBO(i_acute, &kp RA(I),  8 21, 0)
+    COMBO(o_acute, &kp RA(O),  9 10, 0)
+    COMBO(u_acute, &kp RA(U),  7 20, 0)
     // // Circumflex
     // COMBO(a_circumflex, &kp A_CIRC, 13 27, 0)
     // COMBO(e_circumflex, &kp E_CIRC,  3 17, 0)
@@ -35,12 +35,12 @@
     // // tilde
     // COMBO(a_tilde, &kp A_TILDE, 13 28, 0)
     // COMBO(o_tilde, &kp O_TILDE,  9 20, 0)
-    // // Umlaut
-    // COMBO(a_umlaut, &kp A_UML, 13 25, 0)
-    // COMBO(o_umlaut, &kp O_UML,  9 34, 0)
-    // COMBO(u_umlaut, &kp U_UML,  7 21, 0)
-    // // Cedilla
-    // COMBO(c_cedilla, &kp C_CEDIL, 27 32, 0)
+    // Umlaut
+    COMBO(a_umlaut, &kp RA(Q), 13 25, 0)
+    COMBO(o_umlaut, &kp RA(P),  9 34, 0)
+    COMBO(u_umlaut, &kp RA(Y),  7 21, 0)
+    // Cedilla
+    COMBO(c_cedilla, &kp RA(C), 27 32, 0)
 
     // Number Layer
 
