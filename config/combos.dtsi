@@ -5,6 +5,7 @@
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
+#define TIMEOUT 30
 
 / {
   combos {
@@ -23,50 +24,225 @@
     // Default Layer
 
     // // Acude
-    COMBO(a_acute, &kp RA(A), 13 26, 0)
-    COMBO(e_acute, &kp RA(E),  3 16, 0)
-    COMBO(i_acute, &kp RA(I),  8 21, 0)
-    COMBO(o_acute, &kp RA(O),  9 10, 0)
-    COMBO(u_acute, &kp RA(U),  7 20, 0)
+    a_acute {
+      bindings = <&kp RA(A)>;
+      key-positions = <13 26>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
+    e_acute {
+      bindings = <&kp RA(E)>;
+      key-positions = <3 16>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
+    i_acute {
+      bindings = <&kp RA(I)>;
+      key-positions = <8 21>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
+    o_acute {
+      bindings = <&kp RA(O)>;
+      key-positions = <9 10>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
+    u_acute {
+      bindings = <&kp RA(U)>;
+      key-positions = <7 20>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
     // // Circumflex
-    // COMBO(a_circumflex, &kp A_CIRC, 13 27, 0)
-    // COMBO(e_circumflex, &kp E_CIRC,  3 17, 0)
-    // COMBO(o_circumflex, &kp O_CIRC,  9 22, 0)
+    // a_circumflex {
+    //   bindings = <&kp A_CIRC>;
+    //   key-positions = <13 27>;
+    //   layers = 0;
+    //   timeout-ms = <TIMEOUT>;
+    // };
+    // e_circumflex {
+    //   bindings = <&kp E_CIRC>;
+    //   key-positions = <3 17>;
+    //   layers = 0;
+    //   timeout-ms = <TIMEOUT>;
+    // };
+    // o_circumflex {
+    //   bindings = <&kp O_CIRC>;
+    //   key-positions = <9 22>;
+    //   layers = 0;
+    //   timeout-ms = <TIMEOUT>;
+    // };
     // // tilde
-    // COMBO(a_tilde, &kp A_TILDE, 13 28, 0)
-    // COMBO(o_tilde, &kp O_TILDE,  9 20, 0)
+    // a_tilde {
+    //   bindings = <&kp A_TILDE>;
+    //   key-positions = <13 28>;
+    //   layers = 0;
+    //   timeout-ms = <TIMEOUT>;
+    // };
+    // o_tilde {
+    //   bindings = <&kp O_TILDE>;
+    //   key-positions = <9 20>;
+    //   layers = 0;
+    //   timeout-ms = <TIMEOUT>;
+    // };
     // Umlaut
-    COMBO(a_umlaut, &kp RA(Q), 13 25, 0)
-    COMBO(o_umlaut, &kp RA(P),  9 34, 0)
-    COMBO(u_umlaut, &kp RA(Y),  7 21, 0)
+    a_umlaut {
+      bindings = <&kp RA(Q)>;
+      key-positions = <13 25>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
+    o_umlaut {
+      bindings = <&kp RA(P)>;
+      key-positions = <9 34>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
+    u_umlaut {
+      bindings = <&kp RA(Y)>;
+      key-positions = <7 21>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
     // Cedilla
-    COMBO(c_cedilla, &kp RA(C), 27 32, 0)
+    c_cedilla {
+      bindings = <&kp RA(C)>;
+      key-positions = <27 32>;
+      layers = 0;
+      timeout-ms = <TIMEOUT>;
+    };
 
     // Number Layer
 
     // Symbols
-    COMBO(     excl, &kp      EXCL,  1 13, 1)
-    COMBO(       at, &kp        AT,  2 14, 1)
-    COMBO(     hash, &kp      HASH,  3 15, 1)
-    COMBO(   dollar, &kp    DOLLAR,  4 16, 1)
-    COMBO(  percent, &kp   PERCENT,  5 17, 1)
-    COMBO(    caret, &kp     CARET, 13 25, 1)
-    COMBO(ampersand, &kp AMPERSAND, 14 26, 1)
-    COMBO(     star, &kp      STAR, 15 27, 1)
-    COMBO(     lpar, &kp      LPAR, 16 28, 1)
-    COMBO(     rpar, &kp      RPAR, 17 29, 1)
+         excl {
+      bindings = <&kp      EXCL>;
+      key-positions = <1 13>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+        };
+           at {
+      bindings = <&kp        AT>;
+      key-positions = <2 14>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+          };
+         hash {
+      bindings = <&kp      HASH>;
+      key-positions = <3 15>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+        };
+       dollar {
+      bindings = <&kp    DOLLAR>;
+      key-positions = <4 16>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+      };
+      percent {
+      bindings = <&kp   PERCENT>;
+      key-positions = <5 17>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+      };
+        caret {
+      bindings = <&kp     CARET>;
+      key-positions = <13 25>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+        };
+    ampersand {
+      bindings = <&kp AMPERSAND>;
+      key-positions = <14 26>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+         star {
+      bindings = <&kp      STAR>;
+      key-positions = <15 27>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+        };
+         lpar {
+      bindings = <&kp      LPAR>;
+      key-positions = <16 28>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+        };
+         rpar {
+      bindings = <&kp      RPAR>;
+      key-positions = <17 29>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+        };
     // Bluetooth
-    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, 1)
-    COMBO(bt_sel_0, &bt BT_SEL 0, 6  18, 1)
-    COMBO(bt_sel_1, &bt BT_SEL 1, 7  19, 1)
-    COMBO(bt_sel_2, &bt BT_SEL 2, 8  20, 1)
-    COMBO(bt_sel_3, &bt BT_SEL 3, 9  21, 1)
-    COMBO(bt_sel_4, &bt BT_SEL 4, 10 22, 1)
+    bt_clear {
+      bindings = <&bt BT_CLR>;
+      key-positions = <1 2 3 4>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+    bt_sel_0 {
+      bindings = <&bt BT_SEL 0>;
+      key-positions = <6  18>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+    bt_sel_1 {
+      bindings = <&bt BT_SEL 1>;
+      key-positions = <7  19>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+    bt_sel_2 {
+      bindings = <&bt BT_SEL 2>;
+      key-positions = <8  20>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+    bt_sel_3 {
+      bindings = <&bt BT_SEL 3>;
+      key-positions = <9  21>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+    bt_sel_4 {
+      bindings = <&bt BT_SEL 4>;
+      key-positions = <10 22>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
     // Copy & Paste
-    COMBO( undo, &kp  K_UNDO, 18 19, 1)
-    COMBO( copy, &kp  K_COPY, 19 20, 1)
-    COMBO(paste, &kp K_PASTE, 20 21, 1)
-    COMBO(  cut, &kp   K_CUT, 21 22, 1)
-    COMBO( redo, &kp  K_REDO, 22 23, 1)
+     undo {
+      bindings = <&kp  K_UNDO>;
+      key-positions = <18 19>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+     copy {
+      bindings = <&kp  K_COPY>;
+      key-positions = <19 20>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+    paste {
+      bindings = <&kp K_PASTE>;
+      key-positions = <20 21>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
+      cut {
+      bindings = <&kp   K_CUT>;
+      key-positions = <21 22>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+      };
+     redo {
+      bindings = <&kp  K_REDO>;
+      key-positions = <22 23>;
+      layers = 1;
+      timeout-ms = <TIMEOUT>;
+    };
   };
 };
