@@ -19,6 +19,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "combos.dtsi"
 
+&sk {
+  /delete-property/ ignore-modifiers;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
