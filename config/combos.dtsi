@@ -5,7 +5,6 @@
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
-#define TIMEOUT 30
 
 / {
   combos {
@@ -28,89 +27,89 @@
       bindings = <&kp RA(A)>;
       key-positions = <13 26>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     e_acute {
       bindings = <&kp RA(E)>;
       key-positions = <3 16>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     i_acute {
       bindings = <&kp RA(I)>;
       key-positions = <8 21>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     o_acute {
       bindings = <&kp RA(O)>;
       key-positions = <9 10>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     u_acute {
       bindings = <&kp RA(U)>;
       key-positions = <7 20>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     // // Circumflex
     // a_circumflex {
     //   bindings = <&kp A_CIRC>;
     //   key-positions = <13 27>;
     //   layers = 0;
-    //   timeout-ms = <TIMEOUT>;
+    //   timeout-ms = <30>;
     // };
     // e_circumflex {
     //   bindings = <&kp E_CIRC>;
     //   key-positions = <3 17>;
     //   layers = 0;
-    //   timeout-ms = <TIMEOUT>;
+    //   timeout-ms = <30>;
     // };
     // o_circumflex {
     //   bindings = <&kp O_CIRC>;
     //   key-positions = <9 22>;
     //   layers = 0;
-    //   timeout-ms = <TIMEOUT>;
+    //   timeout-ms = <30>;
     // };
     // // tilde
     // a_tilde {
     //   bindings = <&kp A_TILDE>;
     //   key-positions = <13 28>;
     //   layers = 0;
-    //   timeout-ms = <TIMEOUT>;
+    //   timeout-ms = <30>;
     // };
     // o_tilde {
     //   bindings = <&kp O_TILDE>;
     //   key-positions = <9 20>;
     //   layers = 0;
-    //   timeout-ms = <TIMEOUT>;
+    //   timeout-ms = <30>;
     // };
     // Umlaut
     a_umlaut {
       bindings = <&kp RA(Q)>;
       key-positions = <13 25>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     o_umlaut {
       bindings = <&kp RA(P)>;
       key-positions = <9 34>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     u_umlaut {
       bindings = <&kp RA(Y)>;
       key-positions = <7 21>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     // Cedilla
     c_cedilla {
       bindings = <&kp RA(C)>;
       key-positions = <27 32>;
       layers = 0;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
 
     // Number Layer
@@ -120,129 +119,129 @@
       bindings = <&kp      EXCL>;
       key-positions = <1 13>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
         };
            at {
       bindings = <&kp        AT>;
       key-positions = <2 14>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
           };
          hash {
       bindings = <&kp      HASH>;
       key-positions = <3 15>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
         };
        dollar {
       bindings = <&kp    DOLLAR>;
       key-positions = <4 16>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
       };
       percent {
       bindings = <&kp   PERCENT>;
       key-positions = <5 17>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
       };
         caret {
       bindings = <&kp     CARET>;
       key-positions = <13 25>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
         };
     ampersand {
       bindings = <&kp AMPERSAND>;
       key-positions = <14 26>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
          star {
       bindings = <&kp      STAR>;
       key-positions = <15 27>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
         };
          lpar {
       bindings = <&kp      LPAR>;
       key-positions = <16 28>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
         };
          rpar {
       bindings = <&kp      RPAR>;
       key-positions = <17 29>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
         };
     // Bluetooth
     bt_clear {
       bindings = <&bt BT_CLR>;
       key-positions = <1 2 3 4>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     bt_sel_0 {
       bindings = <&bt BT_SEL 0>;
       key-positions = <6  18>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     bt_sel_1 {
       bindings = <&bt BT_SEL 1>;
       key-positions = <7  19>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     bt_sel_2 {
       bindings = <&bt BT_SEL 2>;
       key-positions = <8  20>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     bt_sel_3 {
       bindings = <&bt BT_SEL 3>;
       key-positions = <9  21>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     bt_sel_4 {
       bindings = <&bt BT_SEL 4>;
       key-positions = <10 22>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     // Copy & Paste
      undo {
       bindings = <&kp  K_UNDO>;
       key-positions = <18 19>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
      copy {
       bindings = <&kp  K_COPY>;
       key-positions = <19 20>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
     paste {
       bindings = <&kp K_PASTE>;
       key-positions = <20 21>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
       cut {
       bindings = <&kp   K_CUT>;
       key-positions = <21 22>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
       };
      redo {
       bindings = <&kp  K_REDO>;
       key-positions = <22 23>;
       layers = 1;
-      timeout-ms = <TIMEOUT>;
+      timeout-ms = <30>;
     };
   };
 };
