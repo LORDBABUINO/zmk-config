@@ -137,6 +137,13 @@
             layers = <1>;
         };
 
+        backslash {
+            bindings = <&kp      BACKSLASH>;
+            key-positions = <28 29>;
+            layers = <1>;
+            timeout-ms = <30>;
+        };
+
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <7 8 9 10>;

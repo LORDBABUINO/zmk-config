@@ -165,6 +165,12 @@
       layers = <1>;
       timeout-ms = <30>;
         };
+    backslash {
+      bindings = <&kp      BACKSLASH>;
+      key-positions = <28 29>;
+      layers = <1>;
+      timeout-ms = <30>;
+    };
     // Bluetooth
     bt_clear {
       bindings = <&bt BT_CLR>;
