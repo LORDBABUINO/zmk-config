@@ -210,16 +210,16 @@
 
         default {
 // -----------------------------------------------------------------------------------------------------------------
-// |  ALT/TAB  |  Q  |  W  |  E  |  R    |    T   |   |   Y   |    U     |    I    |   O   |    P   |      BKSP    |
-// |   LIGHTS  |  A  |  S  |  D  |  F    |    G   |   |   H   |    J     |    K    |   L   |    ;   |       '      |
-// |    CTRL   |  Z  |  X  |  C  |  V    |    B   |   |   N   |    M     |    ,    |   .   |    /   |   SHFT/CAPS  |
-//                         | GUI | PREV  |  SPACE |   |  ENT  |   NEXT   |   ALT   |
+// |  ALT/TAB  |  Q  |  W  |  E  |  R    |    T   |   |     Y    |    U     |    I    |   O   |    P   |  BKSP |
+// |   LIGHTS  |  A  |  S  |  D  |  F    |    G   |   |     H    |    J     |    K    |   L   |    ;   |   '   |
+// |    CTRL   |  Z  |  X  |  C  |  V    |    B   |   |     N    |    M     |    ,    |   .   |    /   |  ENT  |
+//                         | GUI | PREV  |  SPACE |   |  RSHIFT  |   NEXT   |   ALT   |
 
             bindings = <
-&mt LALT TAB  &kp Q  &kp W  &kp E         &kp R    &kp T        &kp Y    &kp U       &kp I      &kp O    &kp P     &kp BSPC
-&tog LIGHTS   &kp A  &kp S  &kp D         &kp F    &kp G        &kp H    &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL     &kp Z  &kp X  &kp C         &kp V    &kp B        &kp N    &kp M       &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT CAPS
-                            &mt LGUI ESC  &mo NAV  &kp SPACE    &kp RET  &mo NUMBER  &kp RALT
+&mt LALT TAB  &kp Q  &kp W  &kp E         &kp R    &kp T        &kp Y       &kp U       &kp I      &kp O    &kp P     &kp BSPC
+&tog LIGHTS   &kp A  &kp S  &kp D         &kp F    &kp G        &kp H       &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL     &kp Z  &kp X  &kp C         &kp V    &kp B        &kp N       &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                            &mt LGUI ESC  &mo NAV  &kp SPACE    &kp RSHIFT  &mo NUMBER  &kp RALT
             >;
         };
 
@@ -227,13 +227,13 @@
 // ------------------------------------------------------------------------------------------------------------------------
 // |  ALT/TAB  |    1    |    2    |    3    |      4    |    5    |  |  F1  |   F2  |    F3  |  F4   |   F5    |   BKSP  |
 // |   LIGHTS  |    6    |    7    |    8    |      9    |    0    |  |  F6  |   F7  |    F8  |  F9   |  F10    |   DEL   |
-// |    CTRL   |    `    |    -    |    =    |      [    |    ]    |  | F11  |  F12  |        |  INS  |  PSCRN  |  SHIFT  |
+// |    CTRL   |    `    |    -    |    =    |      [    |    ]    |  | F11  |  F12  |        |  INS  |  PSCRN  |         |
 //                                 |   GUI   |    PREV   |  SHIFT  |  |      |  NEXT |   ALT  |
 
             bindings = <
 &mt LALT TAB  &kp N1     &kp N2     &kp N3        &kp N4       &kp N5        &kp F1   &kp F2   &kp F3    &kp F4   &kp F5     &kp BSPC
 &tog LIGHTS   &kp N6     &kp N7     &kp N8        &kp N9       &kp N0        &kp F6   &kp F7   &kp F8    &kp F9   &kp F10    &kp DEL
-&kp LCTRL     &kp GRAVE  &kp MINUS  &kp EQUAL     &kp LBKT     &kp RBKT      &kp F11  &kp F12  &trans    &kp INS  &kp PSCRN  &kp RSHIFT
+&kp LCTRL     &kp GRAVE  &kp MINUS  &kp EQUAL     &kp LBKT     &kp RBKT      &kp F11  &kp F12  &trans    &kp INS  &kp PSCRN  &trans
                                     &mt LGUI ESC  &trans       &kp LSHIFT    &trans   &trans   &kp RALT
             >;
         };
