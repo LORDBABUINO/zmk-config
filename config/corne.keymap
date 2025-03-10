@@ -84,7 +84,7 @@
         };
 
         u_umlaut {
-            bindings = <&kp RA(U)>;
+            bindings = <&kp RA(Y)>;
             key-positions = <7 21>;
             layers = <0>;
         };
