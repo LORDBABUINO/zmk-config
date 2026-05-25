@@ -294,16 +294,16 @@
 
         lights {
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
-// | BOOTLOADER |    RESET    |   RGB TG   |  BL CYCLE   |  RGB EFF   |           |  |        |        |          |       |    RESET   | BOOTLOADER |
-// |   LIGHTS   |  RGB BRI+   |   RGB HUE+ |   RGB SAT+  |   BL UP    |           |  |        |        |          |       |            |            |
-// |   BL TOG   |  RGB BRI-   |   RGB HUE- |   RGB SAT-  |  BL DOWN   |           |  |        |        |          |       |            |            |
+// | BOOTLOADER |    RESET    |   RGB TG   |             |  RGB EFF   |           |  |        |        |          |       |    RESET   | BOOTLOADER |
+// |   LIGHTS   |  RGB BRI+   |   RGB HUE+ |   RGB SAT+  |   EP ON    |           |  |        |        |          |       |            |            |
+// |   EP TOG   |  RGB BRI-   |   RGB HUE- |   RGB SAT-  |   EP OFF   |           |  |        |        |          |       |            |            |
 //                                         |             |            |           |  |        | LIGHTS |          |
 
             bindings = <
-&bootloader  &sys_reset       &rgb_ug RGB_TOG  &bl BL_CYCLE     &rgb_ug RGB_EFF   &trans  &trans  &trans       &trans  &trans  &sys_reset  &bootloader
-&tog LIGHTS  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &bl BL_INC        &trans  &trans  &trans       &trans  &trans  &trans      &trans
-&bl BL_TOG   &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &bl BL_DEC        &trans  &trans  &trans       &trans  &trans  &trans      &trans
-                                               &trans           &trans            &trans  &trans  &tog LIGHTS  &trans
+&bootloader        &sys_reset       &rgb_ug RGB_TOG  &trans           &rgb_ug RGB_EFF    &trans  &trans  &trans       &trans  &trans  &sys_reset  &bootloader
+&tog LIGHTS        &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &ext_power EP_ON   &trans  &trans  &trans       &trans  &trans  &trans      &trans
+&ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &ext_power EP_OFF  &trans  &trans  &trans       &trans  &trans  &trans      &trans
+                                                     &trans           &trans             &trans  &trans  &tog LIGHTS  &trans
             >;
         };
     };
