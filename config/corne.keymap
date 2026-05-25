@@ -38,6 +38,15 @@
         bindings = <&kp RAS(GRAVE) &kp O>;
     };
 
+    /*
+      KEY POSITIONS
+      ╭────────────────────────╮  ╭────────────────────────╮
+      │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
+      │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
+      │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
+      ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
+                  ╰────────────╯  ╰────────────╯
+    */
     combos {
         compatible = "zmk,combos";
 
@@ -78,7 +87,7 @@
         };
 
         o_umlaut {
-            bindings = <&kp RA(O)>;
+            bindings = <&kp RA(P)>;
             key-positions = <9 33>;
             layers = <0>;
         };
@@ -159,7 +168,7 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <28 29>;
             layers = <1>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
         };
 
         bt_clear {
@@ -192,7 +201,7 @@
             layers = <1>;
         };
 
-        bt_sel_5 {
+        bt_sel_4 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <10 22>;
             layers = <1>;
@@ -284,11 +293,11 @@
         };
 
         lights {
-// --------------------------------------------------------------------------------------------------------------------------------------------------
-// |   BOOTLOADER  |      RESET    |     RGBTG     |    BL CYCLE   | RGB CYCLE | |      |       |             |      |       |  RESET   | BOOTLOADER|
-// |    LIGHTS     |   RGB UG UP   |  RGB HUE UP   |  RGB SAT UP   |  BL UP    | |      |       |             |      |       |          |           |
-// |     BLTG      |   RGB UG DN   |  RGB HUE DN   |  RGB SAT DN   | BL DOWN   | |      |       |             |      |       |          |           |
-//                                                 |               |           | |      |       |  LIGHTS     |      |
+// ----------------------------------------------------------------------------------------------------------------------------------------------------
+// | BOOTLOADER |    RESET    |   RGB TG   |  BL CYCLE   |  RGB EFF   |           |  |        |        |          |       |    RESET   | BOOTLOADER |
+// |   LIGHTS   |  RGB BRI+   |   RGB HUE+ |   RGB SAT+  |   BL UP    |           |  |        |        |          |       |            |            |
+// |   BL TOG   |  RGB BRI-   |   RGB HUE- |   RGB SAT-  |  BL DOWN   |           |  |        |        |          |       |            |            |
+//                                         |             |            |           |  |        | LIGHTS |          |
 
             bindings = <
 &bootloader  &sys_reset       &rgb_ug RGB_TOG  &bl BL_CYCLE     &rgb_ug RGB_EFF   &trans  &trans  &trans       &trans  &trans  &sys_reset  &bootloader
