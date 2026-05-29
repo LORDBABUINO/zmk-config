@@ -122,6 +122,78 @@
             layers = <0>;
         };
 
+        // Symbol combos on the base layer (Erick Wendel's roBa scheme):
+        // vertical top+home column pairs, left hand ! @ # $ %, right hand ^ & * ( )
+        cb_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <1 13>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_at {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 15>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_dllr {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_prcnt {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_amps {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_star {
+            bindings = <&kp STAR>;
+            key-positions = <8 20>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <9 21>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        cb_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <10 22>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
         excl {
             bindings = <&kp EXCL>;
             key-positions = <1 13>;
